@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Promote exact Python RNS 1.4.2 to the complete release baseline while
+  retaining LXMF 1.0.1 for the main corpus and live matrix; the LXMF 1.1.0
+  supplemental lane remains separate and RNS 1.5.0 remains deferred.
+
 ## 1.2.0 - 2026-08-17
 
 - Added the exact-reexport `lxmf_core::message_api` facade, a compiled message

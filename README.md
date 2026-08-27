@@ -342,11 +342,11 @@ Most daemon and control flags are implemented: `--config`, `--rnsconfig`,
 Additional rsLXMF-only flags: `--send`, `--send-file`, `--send-method`,
 `--send-timeout-secs`, and `--send-fields-json`.
 
-The compatibility-floor corpus is Python LXMF 1.0.1 with Reticulum 1.3.8;
-current daemon, delivery, Resource/proof, and propagation behavior is also
-checked against exact LXMF 1.1.0 and Reticulum 1.4.2 sources. Version-specific
-legacy vectors retain their original provenance instead of being silently
-rewritten to current expectations.
+The complete release-baseline corpus and live matrix use Python LXMF 1.0.1
+with Reticulum 1.4.2. A supplementary lane checks daemon, delivery,
+Resource/proof, and propagation behavior against exact LXMF 1.1.0 with the
+same Reticulum 1.4.2 source. Historical vectors retain their original
+provenance, and RNS 1.5.0 is intentionally deferred.
 
 ## Contributing
 

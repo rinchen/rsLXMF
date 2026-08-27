@@ -4720,6 +4720,10 @@ pub(crate) async fn main() {
         }
     };
     if let Err(error) = runner.install_announce_subscriptions(&rns_handle).await {
+        if shutdown.is_triggered() {
+            tracing::info!("Startup announce cancelled by shutdown");
+            return;
+        }
         tracing::error!(%error, "failed to install lxmd announce subscriptions");
         std::process::exit(1);
     }
